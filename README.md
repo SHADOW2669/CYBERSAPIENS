@@ -69,4 +69,3 @@ A log of my learning, progress, and experiences during my cybersecurity internsh
 #### Live Findings & Bug Bounties
 
   * 🔒 **Status:** The primary objective was skill acquisition in a training environment. No live vulnerabilities were reported.
-\</details\>
