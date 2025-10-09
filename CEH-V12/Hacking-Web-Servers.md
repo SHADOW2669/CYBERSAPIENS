@@ -1,4 +1,3 @@
-
 # Hacking Web Servers
 
 ## 1. What is a Web Server and How Does it Work?
@@ -121,4 +120,4 @@ To defend a web server, a layered security approach is required:
 * **Secure Configuration:** Properly configure SSL/TLS with strong encryption ciphers.
 * **Use Strong Authentication:** Enforce strong password policies and multi-factor authentication (MFA), especially for admin panels.
 * **Regular Auditing and Monitoring:** Use log monitoring and file integrity checking tools to detect any unauthorized changes or suspicious activity.
-```
+
