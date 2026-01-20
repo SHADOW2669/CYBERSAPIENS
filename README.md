@@ -7,6 +7,57 @@ A log of my learning, progress, and experiences during my cybersecurity internsh
 
 ## Monthly Progress Log
 
+### 🗓️ January 2026
+
+> January was a pivotal month dedicated to bridging the gap between theoretical knowledge and infrastructure-level security. I focused heavily on the **OWASP API Security Top 10 (2023)**, moving beyond simple web pages to analyze the logic, authentication, and resource management of modern APIs. By building a local home lab, I was able to simulate enterprise environments, integrating security monitoring tools with live vulnerable targets.
+
+#### Key Learnings
+
+* **API Security & Logic Flaws:** Mastered the identification of modern API risks, specifically focusing on **BOPLA (Broken Object Property Level Authorization)** and **BFLA (Broken Function Level Authorization)**. I learned that API security is less about "breaking" code and more about manipulating the intended business logic.
+* **Infrastructure & Monitoring Integration:** Developed a strong "Purple Team" perspective by deploying the **Wazuh SIEM** alongside vulnerable targets. This allowed me to see how my attacks (like Brute Forcing or SQLi) appeared in security logs in real-time.
+* **Homelab Systems Administration:** Gained hands-on experience with virtualization using **Proxmox** and containerization with **LXC**, learning how to network multiple services securely.
+
+#### Vulnerabilities Studied (OWASP API Top 10)
+
+* **Broken Authentication (API2:2023):** Exploited logic flaws in password update mechanisms where the "current password" was not required, leading to full account takeovers.
+* **BOPLA (API3:2023):** Successfully performed excessive data exposure by identifying hidden properties in JSON responses and manipulating inputs via Mass Assignment to escalate privileges.
+* **Unrestricted Resource Consumption (API4:2023):** Executed high-volume brute force attacks to demonstrate how a lack of rate-limiting can exhaust server CPU and memory.
+* **BFLA (API5:2023):** Exploited "Admin API" hints leaked in error messages to bypass functional restrictions and delete resources using non-privileged tokens.
+* **Unrestricted Access to Sensitive Business Flows (API6:2023):** Researched real-world logic flaws (like the 2022 Coinbase vulnerability) to understand how unauthorized trades and transactions are processed.
+* **Security Misconfiguration (API8:2023):** Identified verbose error messages and stack traces in **crAPI** that leaked internal system architecture and software versions.
+* **Unsafe Consumption of APIs (API10:2023):** Studied the risks of implicit trust in third-party integrations, using the **SolarWinds** attack as a case study for supply chain security.
+
+#### Tools & Platforms
+
+* **Virtualization & Lab Setup:** * **Proxmox VE:** Used as the primary hypervisor for the lab.
+* **TrueNAS:** Configured for network-attached storage and data management.
+* **LXC (Linux Containers):** Deployed Pi-hole, Wazuh, and Grafana for a lightweight monitoring stack.
+
+
+* **Security Tools:**
+* **Wazuh:** Installed server and agents to monitor host integrity and detect attacks.
+* **Burp Suite & Postman:** Essential for intercepting, modifying, and testing API requests/responses.
+* **Nuclei:** Used for automated vulnerability scanning against lab targets.
+
+
+* **Vulnerable Targets:**
+* **VAmPI (Vulnerable API):** Used for testing Broken Authentication and BOPLA.
+* **crAPI (Completely Ridiculous API):** Analyzed for BFLA and Security Misconfigurations.
+
+
+
+#### Live Findings & Lab Progress
+
+* **Wazuh Integration:** Successfully connected Wazuh agents to an Ubuntu PC and Pi-hole LXC to monitor for unauthorized SSH attempts and privilege escalation.
+* **Lab Deployment:** Resolved service issues with **BeEF-XSS** and **Speedtest Tracker** on TrueNAS, ensuring a stable environment for cross-site scripting and resource monitoring tests.
+* **Dashboards:** Built a custom **Grafana** dashboard connected to lab metrics to visualize system performance during "Unrestricted Resource Consumption" attacks.
+
+#### Overall Experience
+
+January has transformed my approach from a "hacker" to a "security researcher." Building the infrastructure myself—configuring the networking, the monitoring, and the targets—provided a 360-degree view of cybersecurity. I now understand that a single misconfigured API or a missing rate-limit can be just as devastating as a zero-day exploit. I feel confident moving into February with a robust lab environment capable of simulating complex, multi-stage attack scenarios.
+
+
+
 ### 🗓️ October 2025
 
 > October was a month of intense, focused effort on making significant progress on core web vulnerabilities and validating my broader cybersecurity knowledge. I dedicated significant time to working through entire modules within the PortSwigger Web Security Academy, moving from foundational concepts to advanced exploitation in several key areas.
