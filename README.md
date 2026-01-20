@@ -7,9 +7,9 @@ A log of my learning, progress, and experiences during my cybersecurity internsh
 
 ## Monthly Progress Log
 
-### 🗓️ January 2026
+### 🗓️ December 2026
 
-> January was a pivotal month dedicated to bridging the gap between theoretical knowledge and infrastructure-level security. I focused heavily on the **OWASP API Security Top 10 (2023)**, moving beyond simple web pages to analyze the logic, authentication, and resource management of modern APIs. By building a local home lab, I was able to simulate enterprise environments, integrating security monitoring tools with live vulnerable targets.
+> December was a pivotal month dedicated to bridging the gap between theoretical knowledge and infrastructure-level security. I focused heavily on the **OWASP API Security Top 10 (2023)**, moving beyond simple web pages to analyze the logic, authentication, and resource management of modern APIs. By building a local home lab, I was able to simulate enterprise environments, integrating security monitoring tools with live vulnerable targets.
 
 #### Key Learnings
 
@@ -54,7 +54,7 @@ A log of my learning, progress, and experiences during my cybersecurity internsh
 
 #### Overall Experience
 
-January has transformed my approach from a "hacker" to a "security researcher." Building the infrastructure myself—configuring the networking, the monitoring, and the targets—provided a 360-degree view of cybersecurity. I now understand that a single misconfigured API or a missing rate-limit can be just as devastating as a zero-day exploit. I feel confident moving into February with a robust lab environment capable of simulating complex, multi-stage attack scenarios.
+December has transformed my approach from a "hacker" to a "security researcher." Building the infrastructure myself—configuring the networking, the monitoring, and the targets—provided a 360-degree view of cybersecurity. I now understand that a single misconfigured API or a missing rate-limit can be just as devastating as a zero-day exploit. I feel confident moving into February with a robust lab environment capable of simulating complex, multi-stage attack scenarios.
 
 
 
